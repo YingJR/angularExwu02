@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="maintainTable">
+
+  <head>
+
+    <link rel="stylesheet" href="../lib/angular-ui-grid/ui-grid.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    
+    <script src="../lib/angular/angular.min.js"></script>
+    <script data-require="angular.js@1.5.10" data-semver="1.5.10" src="https://code.angularjs.org/1.5.10/angular-sanitize.js"></script>
+    <script src="../lib/angular-ui-grid/ui-grid.min.js"></script>
+
+    <script data-require="ui-bootstrap@*" data-semver="0.12.1" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+    <script src="../../js/jquery-3.1.0.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/mike-marcacci/objectpath/v1.1.0/lib/ObjectPath.js"></script>
+    <script src="https://cdn.rawgit.com/geraintluff/tv4/v1.1.9/tv4.min.js"></script>
+    <script src="https://cdn.rawgit.com/Textalk/angular-schema-form/0.8.0/dist/schema-form.js"></script>
+    <script src="https://cdn.rawgit.com/Textalk/angular-schema-form/0.8.0/dist/bootstrap-decorator.js"></script>
+    
+    <script src="../app/rowedit.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl as vm">
+    <div class="grid" ui-grid="vm.gridOptions" ui-grid-edit></div>
+  </body>
+
+</html>
